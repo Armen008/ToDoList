@@ -1,0 +1,229 @@
+
+
+/* .img1{
+    width: 40px;
+    height: 40px;
+    margin-right: 0%;
+    margin-top: 20px;
+}
+body{
+    margin: 0;
+}
+.Cont1{
+    display: flex;
+}
+.Img-Cont{
+    width: 50%;
+    height: 690px;
+   
+}
+.imgp{
+    display: flex;
+    margin-left: 30px;
+
+}
+.Inbox{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin-left: 10px;
+}
+.p1{
+    color: #b8b5b5;
+    font-size: 30px;
+    margin-right: 270px;
+    position: relative;
+    top: 30px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.p2{
+    font-size: 35px;
+    margin-right: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textinp{
+    width: 320px;
+    height: 40px;
+    margin-right: 20px;
+    position: relative;
+    left: 80px;
+    border: 2px solid #147bd5;
+    border-radius: 5px;
+}
+.passinp{
+    width: 320px;
+    height: 40px;
+    margin-right: 20px;
+    border: 2px solid #aeafb0;
+    border-radius: 5px;
+    position: relative;
+    top: 60px;
+    right: 270px;
+
+}
+
+
+.e-cont{
+    width: 40px; 
+    position: relative;
+    left: 150px;
+    height: 10px;
+}
+.p3{
+    color: #147bd5;
+    font-size: 15px;
+   position: relative;
+   bottom: 7px;
+}
+.but1{
+    width: 325px;
+    height: 50px;
+    border: none;
+    background-color: #147bd5;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+    right: 105px;
+}
+.line{
+    border-top: 2px solid #c6c6c6;
+    width: 110px;
+    height: 1px;
+    position: relative;
+    top: 30px;
+    padding: 2px;
+   
+}
+.divLine{
+ position: relative;
+    left: 110px;  
+    top: 116px;
+     display: flex;
+}
+.p4{
+    color: #8e8d8d;
+    
+}
+.icondiv{
+    display: flex;
+    position: relative;
+    top: 130px;
+    left: 110px;
+}
+.but2{
+    width: 100px;
+    height: 70px;
+    border: 2px solid #aeafb0;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 10px;
+
+}
+.img3{
+    width: 40px;
+    height: 40px;
+}
+.p-div{
+    display: flex;
+    position: relative;
+    top: 150px;
+    left: 40px;
+}
+.p5{
+    color: #8e8d8d;
+}
+.p6{
+    color: #147bd5;
+    margin-left: 10px;
+}
+
+.bigimg{
+    height: 697px;
+    width: 50%;
+} */
+
+
+
+
+
+
+
+.ToDo-button{
+    width: 250px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color: #100279;
+    border: 2px solid #8a4aea ;
+}
+
+.Add-but{
+    width: 50px;
+    height: 38px;
+    border: none;
+    margin-left: 20px;
+    background-color: #8a4aea;
+    border-radius: 5px;
+    margin-top: 21px;
+    color: #fff;
+    font-size: 17px;
+}
+
+
+.input-add-li{
+    width: 500px;
+    height: 570px;
+    background-color: #100279;
+    border-radius: 5px;
+    margin-left: 32%;
+    margin-top: 80px;
+}
+.input-add-li h1{
+    color: #fff;
+}
+
+ul li{
+    display: flex;
+    list-style: none;
+    width: 330px;
+    height: 40px;
+    background-color: #8a4aea;
+    margin-top: 20px;
+    position: relative;
+    bottom: 400px;
+    left: 500px;
+
+}
+
+li p{
+    color: #fff;
+    position: relative;
+bottom: 8px;
+left: 15px;
+}
+li input{
+    margin-left: 10px;
+}
+li img{
+    width: 20px;
+    height: 20px;
+}
+.editIcon{
+    color: #fff;
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 40px;
+}
+.removeIcon{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.toDoCompleted{
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.toDoNotCompleted{
+    font-weight: 500;
+}
