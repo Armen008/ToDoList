@@ -1,30 +1,28 @@
-import React, { Children, createContext, useState } from "react";
+import React, { Children, createContext, useEffect, useState } from "react";
  export const ToDoContext=createContext();
 export function ToDoProvider({children}){
 
-    const [toDos, setToDos]=useState([
-        {
+    const [toDos, setToDos]=useState(null)
 
-        toDo:"wash deshes",
-        id: 1,
-        checked : false,
-    },
-    {
+const [loadMore, setLoadMore]= useState(3);
+const[page, setPage]= useState(1)
 
-        toDo:"make dinner",
-        id: 2,
-        checked : false,
-    },
-    {
+useEffect(()=>{
+    fetch("https://dummyjson.com/todos")
+    .then((Response)=> Response.json())
+    .then((jsondata)=> { setToDos(jsondata.todos?.slice(0, page * loadMore))})
+}, [page])
 
-        toDo:"do lessons",
-        id: 3,
-        checked : false,
-    }
 
-])
+
+
+
+
+
+
+
     return(
-        <ToDoContext.Provider value={{toDos,setToDos}}>
+        <ToDoContext.Provider value={{toDos,setToDos,loadMore,setLoadMore,page,setPage}}>
             {children}
         </ToDoContext.Provider>
     )

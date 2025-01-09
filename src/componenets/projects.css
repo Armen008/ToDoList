@@ -186,13 +186,14 @@ margin-left: 10px;
 ul li{
     display: flex;
     list-style: none;
-    width: 330px;
-    height: 40px;
+    width: 420px;
+    height: 48px;
     background-color: #8a4aea;
     margin-top: 20px;
-    position: relative;
+    /* position: relative; */
     bottom: 400px;
-    left: 500px;
+    left: 445px;
+    border-radius: 5px;
 
 }
 
@@ -201,6 +202,7 @@ li p{
     position: relative;
 bottom: 8px;
 left: 15px;
+font-size: 15px;
 }
 li input{
     margin-left: 10px;
@@ -211,13 +213,16 @@ li img{
 }
 .editIcon{
     color: #fff;
-    margin-left: 150px;
+    justify-content: end;
     margin-top: 10px;
-    width: 40px;
+    margin-left: 20px;
+
 }
 .removeIcon{
     color: #fff;
-    margin-top: 10px;
+ justify-content: end;
+ margin-top: 10px;
+ margin-left: 10px;
 }
 
 .toDoCompleted{
@@ -226,4 +231,26 @@ li img{
 }
 .toDoNotCompleted{
     font-weight: 500;
+}
+
+
+.LoadMore{
+    width: 9    0px;
+    height: 35px;
+    border: none;
+    background: #8a4aea;
+    position: relative;
+    top: 580px;
+    right: 455px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+.Scroll-Cont{
+    overflow-y: scroll;
+    width: 450px;
+    height: 300px;
+    background-color: #100279;
+    margin-top: 30px;
 }

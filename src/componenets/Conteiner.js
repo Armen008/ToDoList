@@ -25,8 +25,9 @@ function CheckboxLine(e,item){
 function Edit(item){
 let promptValue=prompt("Edit your text")
 
-const mapToDo=toDos.map((elem)=> elem.id==item.id ? {...elem, toDo:promptValue} : elem)
+const mapToDo=toDos.map((elem)=> elem.id==item.id ? {...elem, todo:promptValue} : elem)
 setToDos(mapToDo)
+console.log(item.id)
 }
     function Remove(item){
         const filterToDo= toDos.filter((toDo) => toDo.id !== item.id)
@@ -35,13 +36,15 @@ setToDos(mapToDo)
     }
 
 return(
-        <ul>
 
-{toDos.map((item) => {
+        <ul>
+<div className="Scroll-Cont">
+
+{ toDos?.map((item) => {
 
     return(
         
-<li><input onChange={(e)=>CheckboxLine(e,item)} id={item.id} type="checkbox"/> <p className={item.checked ? "toDoCompleted" : "toDoNotCompleted"}>{item.toDo}</p>
+<li><input onChange={(e)=>CheckboxLine(e,item)} id={item.id} type="checkbox"/> <p style={{width: "330px"}} className={item.checked ? "toDoCompleted" : "toDoNotCompleted"}>{item.todo}</p>
 <FontAwesomeIcon onClick={()=>Edit(item)} className="editIcon" icon={faPenToSquare} /> 
 <FontAwesomeIcon onClick={()=>Remove(item)}  className="removeIcon" icon={faTrash} />
 </li>
@@ -51,11 +54,14 @@ return(
 })}
 
 
+</div>
         </ul>
      
 
-        
+      
+
     )
+
 }
 
 export default Conteiner
