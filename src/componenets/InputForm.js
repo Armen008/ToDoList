@@ -15,6 +15,7 @@ function HandleValueChange(event){
 
 
 function handleSubmit(e){
+    console.log(InputValue)
     setToDos((prev) => [...prev, {toDo:InputValue}])
     setInputValue("")
  console.log(e.target)

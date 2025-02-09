@@ -41,7 +41,7 @@ return(
 <div className="Scroll-Cont">
 
 { toDos?.map((item) => {
-
+console.log(item)
     return(
         
 <li><input onChange={(e)=>CheckboxLine(e,item)} id={item.id} type="checkbox"/> <p style={{width: "330px"}} className={item.checked ? "toDoCompleted" : "toDoNotCompleted"}>{item.todo}</p>
